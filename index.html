@@ -28,6 +28,13 @@
 <h1 class="textBox" id="site-header">Some Title</h1>
 
 <div class="page" data-role="page" id="content1">
+
+    <script>
+        $(document).on('pagebeforeshow', "#content1", function () {
+            $('#site-header').text('Some Title');
+        });
+    </script>
+
     <div id="content" class="textBox" data-role="content">
         FIRST CONTENT
         <br>
